@@ -1,9 +1,9 @@
-const tempInput = document.querySelector("#temperature");
+const tempInput = document.querySelector("#temp");
 const checkButton = document.querySelector("#checkButton");
 const result = document.querySelector("#result");
 
 checkButton.addEventListener("click", function() {
-    const temp = temperatureInput.value;
+    const temp = tempInput.value;
 
     if (temp === "" || !Number.isFinite(Number(temp))) {
         result.textContent = "Please enter a valid temperature.";
